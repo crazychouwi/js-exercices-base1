@@ -12,8 +12,8 @@
   </form>
   <script type="text/javascript">
   function calcul() {
-    pointure = document.getElementById('pointure').value;
-    annee = document.getElementById('annee').value;
+    var  pointure = document.getElementById('pointure').value;
+    var  annee = document.getElementById('annee').value;
     console.log(pointure+' '+annee);
     pointure = pointure *2;
     pointure = pointure +5;
@@ -23,8 +23,6 @@
     alert(pointure);
   }
   </script>
-
   <script src="fichier.js" type="text/javascript"></script>
-
 </body>
 </html>
