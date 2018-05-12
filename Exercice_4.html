@@ -5,6 +5,22 @@
         <meta charset="UTF-8">
     </head>
     <body>
+      <form class="" action="Exercice_4.html" method="post" onsubmit="recup()">
+        <label for="prenom">Saisissez votre prénom</label><input id="champ1" type="text" name="prenom" value="">
+        <label for="nom">Saisissez votre nom</label><input id="champ2" type="text" name="nom" value="">
+        <label for="ville">Saisissez votre ville</label><input id="champ3" type="text" name="ville" value="">
+        <input type="submit" name="" value="ok">
+      </form>
 
+      <script type="text/javascript">
+        function recup(){
+          champ1 = document.getElementById('champ1').value;
+          champ2 = document.getElementById('champ2').value;
+          champ3 = document.getElementById('champ3').value;
+          alert(champ1+' '+champ2+"\r\n"+champ3);
+        }
+      </script>
+
+      <script src="fichier.js" type="text/javascript"></script>
     </body>
 </html>

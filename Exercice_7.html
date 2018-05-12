@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercice_8</title>
+    <title>Exercice_7</title>
     <meta charset="UTF-8">
 </head>
 <body>
+  <form class="" action="Exercice_7.html" method="post" onsubmit="calcul()">
+      <label for="pointure">Entrez-votre pointure : </label><input type="number" id="pointure" name="pointure" value="" step="1"/>
+      <label for="annee">Entrez-votre année de naissance : </label><input type="number" id="annee" name="annee" value="" step="1"/>
+      <input type="submit" id="valider" name ="valider" value="entrer"/>
+  </form>
+  <script type="text/javascript">
+  function calcul() {
+    pointure = document.getElementById('pointure').value;
+    annee = document.getElementById('annee').value;
+    console.log(pointure+' '+annee);
+    pointure = pointure *2;
+    pointure = pointure +5;
+    pointure = pointure *50;
+    pointure = pointure-annee;
+    pointure = pointure +1766;
+    alert(pointure);
+  }
+  </script>
+
+  <script src="fichier.js" type="text/javascript"></script>
 
 </body>
 </html>
